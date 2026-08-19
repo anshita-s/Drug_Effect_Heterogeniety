@@ -1,0 +1,20 @@
+<CompuCell3DLatticeData Version="1.0">
+   <Dimensions x="100" y="100" z="1"/>
+   <Lattice Type="Square"/>
+   <Output CoreFileName="Step" Directory="C:\Users\Anshita Sharma\CC3DWorkspace\drug_independent_switch_cc3d_08_15_2026_00_03_29_48aa93\LatticeData" Frequency="1" NumberOfSteps="4440"/>
+   <CellType TypeId="0" TypeName="Medium"/>
+   <CellType TypeId="1" TypeName="CANCER_S"/>
+   <CellType TypeId="2" TypeName="CANCER_R"/>
+   <CellType TypeId="3" TypeName="COI"/>
+   <CellType TypeId="4" TypeName="NCI"/>
+   <CellType TypeId="5" TypeName="C_LYSED"/>
+   <CellType TypeId="6" TypeName="LAMININ"/>
+   <CellType TypeId="7" TypeName="L_LYSED"/>
+   <Fields>
+      <Field Name="Cell_Field" Type="CellField"/>
+      <Field Name="DRUG" Type="ConField"/>
+      <Field Name="GF" Type="ConField"/>
+      <Field Name="I" Type="ConField"/>
+      <Field Name="MMP" Type="ConField"/>
+   </Fields>
+</CompuCell3DLatticeData>

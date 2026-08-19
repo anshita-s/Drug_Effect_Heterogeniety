@@ -1,0 +1,211 @@
+<CompuCell3D Revision="5" Version="4.7.0">
+   
+   
+   
+   <Metadata>      
+      <!-- Basic properties simulation -->
+      <NumberOfProcessors>6</NumberOfProcessors>
+      <DebugOutputFrequency>100</DebugOutputFrequency>
+      <!-- <NonParallelModule Name="Potts"/> -->
+      <MCSConversionFactor DisplayName="No conversion" Units="-">1.0</MCSConversionFactor>
+      <VoxelConversionFactor DisplayName="No conversion" Units="-">1.0</VoxelConversionFactor>
+   </Metadata>
+   
+   
+   
+   <Potts>
+      <!-- Basic properties of CPM (GGH) algorithm -->
+      <!--Dimensions x="200" y="200" z="1"/-->
+      <Dimensions x="100" y="100" z="1"/>
+      <Steps>4440</Steps>
+      <!-- <Temperature>10.0</Temperature> -->
+      <FluctuationAmplitude>  
+         <FluctuationAmplitudeParameters CellType="CANCER_S" FluctuationAmplitude="1"/>
+         <FluctuationAmplitudeParameters CellType="CANCER_R" FluctuationAmplitude="1"/>
+         <FluctuationAmplitudeParameters CellType="COI" FluctuationAmplitude="0.01"/>
+         <FluctuationAmplitudeParameters CellType="NCI" FluctuationAmplitude="0.01"/>
+         <FluctuationAmplitudeParameters CellType="C_LYSED" FluctuationAmplitude="0.01"/>
+         <FluctuationAmplitudeParameters CellType="LAMININ" FluctuationAmplitude="0.01"/>
+         <FluctuationAmplitudeParameters CellType="L_LYSED" FluctuationAmplitude="0.01"/>         
+      </FluctuationAmplitude>
+      <Flip2DimRatio>2</Flip2DimRatio>   
+      <NeighborOrder>2</NeighborOrder>
+      <!-- <RandomSeed>167473</RandomSeed> -->
+   </Potts>
+   
+   
+   
+   <Plugin Name="CellType">
+      <!-- Listing all cell types in the simulation -->
+      <CellType TypeId="0" TypeName="Medium"/>
+      <CellType TypeId="1" TypeName="CANCER_S"/>
+      <CellType TypeId="2" TypeName="CANCER_R"/>
+      <CellType TypeId="3" TypeName="COI"/>
+      <CellType TypeId="4" TypeName="NCI"/>
+      <CellType TypeId="5" TypeName="C_LYSED"/>
+      <CellType TypeId="6" TypeName="LAMININ"/>
+      <CellType TypeId="7" TypeName="L_LYSED"/>      
+   </Plugin>
+   
+   
+   
+   <Plugin Name="Contact">
+      <!-- Specification of adhesion energies -->
+      <!-- NOTE: CANCER_S and CANCER_R now share IDENTICAL adhesion values
+           (both copy what was previously CANCER_A's profile). The original
+           CANCER_B-specific values (CANCER_B-CANCER_B=92.0, CANCER_B-LAMININ=1.0)
+           have been changed to match CANCER_A (23.0 and 10.0) so that the only
+           difference between the two subsets is drug sensitivity, not adhesion. -->
+      <Energy Type1="Medium" Type2="Medium">0.0</Energy>
+      <Energy Type1="Medium" Type2="CANCER_S">10.0</Energy>            <!-- Another value being 2.0 -->
+      <Energy Type1="Medium" Type2="CANCER_R">10.0</Energy>
+      <Energy Type1="Medium" Type2="COI">24.0</Energy>
+      <Energy Type1="Medium" Type2="NCI">24.0</Energy>
+      <Energy Type1="Medium" Type2="C_LYSED">12.0</Energy>
+      <Energy Type1="Medium" Type2="LAMININ">30.0</Energy>
+      <Energy Type1="Medium" Type2="L_LYSED">12.0</Energy>
+      
+      <Energy Type1="CANCER_S" Type2="CANCER_S">23.0</Energy>
+      <Energy Type1="CANCER_S" Type2="CANCER_R">90.0</Energy>
+      <Energy Type1="CANCER_S" Type2="COI">46.0</Energy>
+      <Energy Type1="CANCER_S" Type2="NCI">24.0</Energy>
+      <Energy Type1="CANCER_S" Type2="C_LYSED">12.0</Energy>
+      <Energy Type1="CANCER_S" Type2="LAMININ">10.0</Energy>
+      <Energy Type1="CANCER_S" Type2="L_LYSED">14.0</Energy>
+      
+      <Energy Type1="CANCER_R" Type2="CANCER_R">23.0</Energy>
+      <Energy Type1="CANCER_R" Type2="COI">46.0</Energy>
+      <Energy Type1="CANCER_R" Type2="NCI">24.0</Energy>
+      <Energy Type1="CANCER_R" Type2="C_LYSED">12.0</Energy>
+      <Energy Type1="CANCER_R" Type2="LAMININ">10.0</Energy>
+      <Energy Type1="CANCER_R" Type2="L_LYSED">14.0</Energy>
+      
+      <Energy Type1="COI" Type2="COI">24.0</Energy>
+      <Energy Type1="COI" Type2="NCI">24.0</Energy>
+      <Energy Type1="COI" Type2="C_LYSED">24.0</Energy>
+      <Energy Type1="COI" Type2="LAMININ">40.0</Energy>
+      <Energy Type1="COI" Type2="L_LYSED">24.0</Energy>      
+      
+      <Energy Type1="NCI" Type2="NCI">24.0</Energy>
+      <Energy Type1="NCI" Type2="C_LYSED">24.0</Energy>
+      <Energy Type1="NCI" Type2="LAMININ">40.0</Energy>
+      <Energy Type1="NCI" Type2="L_LYSED">24.0</Energy>      
+      
+      <Energy Type1="C_LYSED" Type2="C_LYSED">24.0</Energy>
+      <Energy Type1="C_LYSED" Type2="LAMININ">28.0</Energy>
+      <Energy Type1="C_LYSED" Type2="L_LYSED">24.0</Energy>
+      
+      <Energy Type1="LAMININ" Type2="LAMININ">10.0</Energy>
+      <Energy Type1="LAMININ" Type2="L_LYSED">20.0</Energy> 
+      
+      <Energy Type1="L_LYSED" Type2="L_LYSED">20.0</Energy> 
+      
+      <NeighborOrder>2</NeighborOrder>
+   </Plugin>
+   
+
+   
+   <Plugin Name="Volume"/>
+   <Plugin Name="VolumeTracker"/>
+   <Plugin Name="Surface"/>
+   <Plugin Name="SurfaceTracker"/>
+   <Plugin Name="ExternalPotential"/>  
+   <Plugin Name="PixelTracker"/>  
+   
+   <Plugin Name="OrientedGrowth">
+      <Penalty>300</Penalty>
+      <Falloff>2</Falloff>
+   </Plugin>
+   
+   <Plugin Name="Secretion">
+      <Field Name="MMP"/>
+      <Field Name="I"/>
+      <Field Name="GF"/>
+   </Plugin>
+   
+   <Plugin Name="CenterOfMass">
+      <!-- Module tracking center of mass of each cell -->
+   </Plugin>
+   
+   <Plugin Name="NeighborTracker">
+      <!-- Module tracking neighboring cells of each cell -->
+   </Plugin>
+   
+
+   
+   <Plugin Name="Chemotaxis">
+      <!-- You may repeat ChemicalField element for each chemical field declared in the PDE solvers -->
+      <!-- Specification of chemotaxis properties of select cell types. -->
+      <ChemicalField Name="GF">
+         <ChemotaxisByType Lambda="100.0" Type="CANCER_S"/>
+         <ChemotaxisByType Lambda="100.0" Type="CANCER_R"/>
+      </ChemicalField>
+   </Plugin>
+ 
+ 
+ 
+  <Steppable Type="DiffusionSolverFE">
+
+      <!-- Specification of PDE solvers --> 
+      <DiffusionField Name="MMP">
+         <DiffusionData>
+            <FieldName>MMP</FieldName>
+            <GlobalDiffusionConstant>0.01</GlobalDiffusionConstant>
+            <GlobalDecayConstant>0.003</GlobalDecayConstant>
+            <!-- <InitialConcentrationExpression>0.0</InitialConcentrationExpression> -->
+         </DiffusionData>
+      </DiffusionField> 
+ 
+      <DiffusionField Name="I">
+         <DiffusionData>
+            <FieldName>I</FieldName>
+            <GlobalDiffusionConstant>0.035</GlobalDiffusionConstant>
+            <GlobalDecayConstant>0.003</GlobalDecayConstant>
+            <!-- <InitialConcentrationExpression>0.0</InitialConcentrationExpression> -->
+         </DiffusionData>
+      </DiffusionField> 
+     
+      <DiffusionField Name="GF">
+         <DiffusionData>
+            <FieldName>GF</FieldName>
+            <GlobalDiffusionConstant>0.05</GlobalDiffusionConstant>
+            <GlobalDecayConstant>0.001</GlobalDecayConstant>
+            <DoNotDecayIn>COI</DoNotDecayIn>
+            <!-- <InitialConcentrationExpression>0.0</InitialConcentrationExpression> -->
+         </DiffusionData>
+      </DiffusionField> 
+
+      <DiffusionField Name="DRUG">
+         <DiffusionData>
+            <FieldName>DRUG</FieldName>
+            <GlobalDiffusionConstant>0.5</GlobalDiffusionConstant>
+            <GlobalDecayConstant>0.001</GlobalDecayConstant>
+            <!-- Drug diffuses at 20 % of the global rate inside CANCER_R cells.
+                 This models the physical barrier / active-efflux effect that
+                 makes resistant cells less permeable to the drug. -->
+            <DiffusionCoefficient CellType="CANCER_R">0.1</DiffusionCoefficient>
+            <!-- <InitialConcentrationExpression>0.0</InitialConcentrationExpression> -->
+         </DiffusionData>
+         <BoundaryConditions>
+            <!-- Continuous drug source along the top edge of the lattice (y = Max),
+                 maintained at a fixed concentration so the drug diffuses inward
+                 over time. All other edges are no-flux (zero derivative). -->
+            <Plane Axis="X">
+               <!--ConstantDerivative PlanePosition="Min" Value="0.0"/-->
+               <!--ConstantDerivative PlanePosition="Max" Value="0.0"/-->
+               <!--ConstantValue PlanePosition="Max" Value="0.0"/-->
+               <!--ConstantValue PlanePosition="Min" Value="0.0"/-->
+            </Plane>
+            <Plane Axis="Y">
+               <!--ConstantDerivative PlanePosition="Min" Value="0.0"/-->
+               <ConstantValue PlanePosition="Max" Value="10.0"/>
+               <ConstantValue PlanePosition="Min" Value="0.0"/>
+            </Plane>
+         </BoundaryConditions>
+      </DiffusionField>
+      
+   </Steppable>
+   
+   
+   
+</CompuCell3D>

@@ -1,0 +1,5 @@
+<Simulation version="4.7.0">
+   <XMLScript Type="XMLScript">Simulation/drug.xml</XMLScript>
+   <PythonScript Type="PythonScript">Simulation/drug.py</PythonScript>
+   <Resource Type="Python">Simulation/drugSteppables.py</Resource>
+</Simulation>

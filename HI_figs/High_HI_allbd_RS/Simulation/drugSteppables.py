@@ -33,7 +33,7 @@ DRUG_MIN_VOLUME = 2.0    # once volume drops below this, the cell is removed
 
 
 
-############################ INITIAL CELLS AND ECM ARRANGEMENT #########################
+########################### INITIAL CELLS AND ECM ARRANGEMENT #########################
 class CellLayoutSteppable(SteppableBasePy):
     
     def __init__(self,frequency=1):

@@ -37,7 +37,7 @@ DRUG_UPTAKE_THRESHOLD = 1.5  # cumulative drugUptake that triggers the fate deci
 
 
 
-############################ INITIAL CELLS AND ECM ARRANGEMENT #########################
+############################# INITIAL CELLS AND ECM ARRANGEMENT #########################
 class CellLayoutSteppable(SteppableBasePy):
     
     def __init__(self,frequency=1):

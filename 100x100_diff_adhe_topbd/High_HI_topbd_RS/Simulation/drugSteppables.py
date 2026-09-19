@@ -566,7 +566,7 @@ class OrientedConstraintSteppable(SteppableBasePy):
 
 
 
-######################### Drug response steppable ##########################
+######################### Drug response steppable #########################
 class DrugResponseSteppable(SteppableBasePy):
     """
     Models the effect of the DRUG field on the two cancer subsets.

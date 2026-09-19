@@ -63,7 +63,7 @@ def _consume_force_next_division_ss():
 
 
 
-############################ INITIAL CELLS AND ECM ARRANGEMENT #########################
+########################### INITIAL CELLS AND ECM ARRANGEMENT #########################
 class CellLayoutSteppable(SteppableBasePy):
     
     def __init__(self,frequency=1):

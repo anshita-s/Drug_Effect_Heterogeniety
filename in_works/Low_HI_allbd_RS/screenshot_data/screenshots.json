@@ -1,0 +1,504 @@
+{
+    "Version": "4.7.0",
+    "ScreenshotData": {
+        "Cell_Field_CellField_2D_XY_0___0001": {
+            "Plot": {
+                "PlotType": "CellField",
+                "PlotName": "Cell_Field"
+            },
+            "Dimension": "2D",
+            "Projection": {
+                "ProjectionPlane": "XY",
+                "ProjectionPosition": 0
+            },
+            "CameraClippingRange": {
+                "Min": "238.76334648219955",
+                "Max": "275.8374444936956"
+            },
+            "CameraFocalPoint": {
+                "x": "50.905794999802055",
+                "y": "44.391550125198485",
+                "z": "0.0"
+            },
+            "CameraPosition": {
+                "x": "50.905794999802055",
+                "y": "44.391550125198485",
+                "z": "254.90437296776838"
+            },
+            "CameraViewUp": {
+                "x": "0.0",
+                "y": "1.0",
+                "z": "0.0"
+            },
+            "Size": {
+                "Width": 600,
+                "Height": 600
+            },
+            "CellBorders": true,
+            "Cells": true,
+            "ClusterBorders": false,
+            "CellGlyphs": false,
+            "FPPLinks": false,
+            "BoundingBox": true,
+            "LatticeAxes": true,
+            "LatticeAxesLabels": true,
+            "TypesInvisible": [
+                0,
+                4
+            ],
+            "CellShellOptimization": true,
+            "metadata": {
+                "BorderColor": [
+                    0,
+                    0,
+                    0,
+                    255
+                ],
+                "ClusterBorderColor": [
+                    0,
+                    0,
+                    0,
+                    255
+                ],
+                "BoundingBoxColor": [
+                    255,
+                    255,
+                    255,
+                    255
+                ],
+                "AxesColor": [
+                    255,
+                    255,
+                    255,
+                    255
+                ],
+                "ContourColor": [
+                    255,
+                    255,
+                    255,
+                    255
+                ],
+                "WindowColor": [
+                    0,
+                    0,
+                    0,
+                    255
+                ],
+                "FPPLinksColor": [
+                    255,
+                    255,
+                    255,
+                    255
+                ],
+                "ShowHorizontalAxesLabels": true,
+                "ShowVerticalAxesLabels": true,
+                "TypeColorMap": {
+                    "0": [
+                        0,
+                        0,
+                        0,
+                        255
+                    ],
+                    "1": [
+                        255,
+                        0,
+                        0,
+                        255
+                    ],
+                    "2": [
+                        255,
+                        255,
+                        0,
+                        255
+                    ],
+                    "3": [
+                        170,
+                        255,
+                        0,
+                        255
+                    ],
+                    "4": [
+                        170,
+                        255,
+                        127,
+                        255
+                    ],
+                    "5": [
+                        128,
+                        128,
+                        0,
+                        255
+                    ],
+                    "6": [
+                        0,
+                        0,
+                        255,
+                        255
+                    ],
+                    "7": [
+                        192,
+                        192,
+                        192,
+                        255
+                    ],
+                    "8": [
+                        128,
+                        0,
+                        128,
+                        255
+                    ],
+                    "9": [
+                        255,
+                        165,
+                        0,
+                        255
+                    ],
+                    "10": [
+                        64,
+                        224,
+                        208,
+                        255
+                    ]
+                },
+                "field_precision": null,
+                "actual_screenshot": true
+            },
+            "screenshotName": "Cell_Field_CellField_2D_XY_0___0001"
+        },
+        "DRUG_ConField_2D_XY_0___0002": {
+            "Plot": {
+                "PlotType": "ConField",
+                "PlotName": "DRUG"
+            },
+            "Dimension": "2D",
+            "Projection": {
+                "ProjectionPlane": "XY",
+                "ProjectionPosition": 0
+            },
+            "CameraClippingRange": {
+                "Min": "238.76334648219955",
+                "Max": "275.83744449369567"
+            },
+            "CameraFocalPoint": {
+                "x": "41.128967913505136",
+                "y": "44.77215832968825",
+                "z": "0.0"
+            },
+            "CameraPosition": {
+                "x": "41.128967913505136",
+                "y": "44.77215832968825",
+                "z": "254.90437296776844"
+            },
+            "CameraViewUp": {
+                "x": "0.0",
+                "y": "1.0",
+                "z": "0.0"
+            },
+            "Size": {
+                "Width": 600,
+                "Height": 600
+            },
+            "CellBorders": true,
+            "Cells": true,
+            "ClusterBorders": false,
+            "CellGlyphs": false,
+            "FPPLinks": false,
+            "BoundingBox": true,
+            "LatticeAxes": true,
+            "LatticeAxesLabels": true,
+            "TypesInvisible": [
+                0,
+                4
+            ],
+            "CellShellOptimization": true,
+            "metadata": {
+                "BorderColor": [
+                    0,
+                    0,
+                    0,
+                    255
+                ],
+                "ClusterBorderColor": [
+                    0,
+                    0,
+                    0,
+                    255
+                ],
+                "BoundingBoxColor": [
+                    255,
+                    255,
+                    255,
+                    255
+                ],
+                "AxesColor": [
+                    255,
+                    255,
+                    255,
+                    255
+                ],
+                "ContourColor": [
+                    255,
+                    255,
+                    255,
+                    255
+                ],
+                "WindowColor": [
+                    0,
+                    0,
+                    0,
+                    255
+                ],
+                "FPPLinksColor": [
+                    255,
+                    255,
+                    255,
+                    255
+                ],
+                "ShowHorizontalAxesLabels": true,
+                "ShowVerticalAxesLabels": true,
+                "TypeColorMap": {
+                    "0": [
+                        0,
+                        0,
+                        0,
+                        255
+                    ],
+                    "1": [
+                        255,
+                        0,
+                        0,
+                        255
+                    ],
+                    "2": [
+                        255,
+                        255,
+                        0,
+                        255
+                    ],
+                    "3": [
+                        170,
+                        255,
+                        0,
+                        255
+                    ],
+                    "4": [
+                        170,
+                        255,
+                        127,
+                        255
+                    ],
+                    "5": [
+                        128,
+                        128,
+                        0,
+                        255
+                    ],
+                    "6": [
+                        0,
+                        0,
+                        255,
+                        255
+                    ],
+                    "7": [
+                        192,
+                        192,
+                        192,
+                        255
+                    ],
+                    "8": [
+                        128,
+                        0,
+                        128,
+                        255
+                    ],
+                    "9": [
+                        255,
+                        165,
+                        0,
+                        255
+                    ],
+                    "10": [
+                        64,
+                        224,
+                        208,
+                        255
+                    ]
+                },
+                "MinRangeFixed": true,
+                "MaxRangeFixed": false,
+                "MinRange": 0.0,
+                "MaxRange": 100.0,
+                "ContoursOn": false,
+                "NumberOfContourLines": 3,
+                "ScalarIsoValues": [],
+                "LegendEnable": true,
+                "DisplayMinMaxInfo": true,
+                "field_precision": null
+            },
+            "screenshotName": "DRUG_ConField_2D_XY_0"
+        },
+        "Cell_Field_CellField_2D_XY_0___0003": {
+            "Plot": {
+                "PlotType": "CellField",
+                "PlotName": "Cell_Field"
+            },
+            "Dimension": "2D",
+            "Projection": {
+                "ProjectionPlane": "XY",
+                "ProjectionPosition": 0
+            },
+            "CameraClippingRange": {
+                "Min": "238.76334648219955",
+                "Max": "275.8374444936956"
+            },
+            "CameraFocalPoint": {
+                "x": "50.905794999802055",
+                "y": "44.391550125198485",
+                "z": "0.0"
+            },
+            "CameraPosition": {
+                "x": "50.905794999802055",
+                "y": "44.391550125198485",
+                "z": "254.90437296776838"
+            },
+            "CameraViewUp": {
+                "x": "0.0",
+                "y": "1.0",
+                "z": "0.0"
+            },
+            "Size": {
+                "Width": 600,
+                "Height": 600
+            },
+            "CellBorders": true,
+            "Cells": true,
+            "ClusterBorders": false,
+            "CellGlyphs": false,
+            "FPPLinks": false,
+            "BoundingBox": true,
+            "LatticeAxes": true,
+            "LatticeAxesLabels": true,
+            "TypesInvisible": [
+                0,
+                4
+            ],
+            "CellShellOptimization": true,
+            "metadata": {
+                "BorderColor": [
+                    0,
+                    0,
+                    0,
+                    255
+                ],
+                "ClusterBorderColor": [
+                    0,
+                    0,
+                    0,
+                    255
+                ],
+                "BoundingBoxColor": [
+                    255,
+                    255,
+                    255,
+                    255
+                ],
+                "AxesColor": [
+                    255,
+                    255,
+                    255,
+                    255
+                ],
+                "ContourColor": [
+                    255,
+                    255,
+                    255,
+                    255
+                ],
+                "WindowColor": [
+                    0,
+                    0,
+                    0,
+                    255
+                ],
+                "FPPLinksColor": [
+                    255,
+                    255,
+                    255,
+                    255
+                ],
+                "ShowHorizontalAxesLabels": true,
+                "ShowVerticalAxesLabels": true,
+                "TypeColorMap": {
+                    "0": [
+                        0,
+                        0,
+                        0,
+                        255
+                    ],
+                    "1": [
+                        255,
+                        0,
+                        0,
+                        255
+                    ],
+                    "2": [
+                        255,
+                        255,
+                        0,
+                        255
+                    ],
+                    "3": [
+                        170,
+                        255,
+                        0,
+                        255
+                    ],
+                    "4": [
+                        170,
+                        255,
+                        127,
+                        255
+                    ],
+                    "5": [
+                        128,
+                        128,
+                        0,
+                        255
+                    ],
+                    "6": [
+                        0,
+                        0,
+                        255,
+                        255
+                    ],
+                    "7": [
+                        192,
+                        192,
+                        192,
+                        255
+                    ],
+                    "8": [
+                        128,
+                        0,
+                        128,
+                        255
+                    ],
+                    "9": [
+                        255,
+                        165,
+                        0,
+                        255
+                    ],
+                    "10": [
+                        64,
+                        224,
+                        208,
+                        255
+                    ]
+                },
+                "field_precision": null
+            },
+            "screenshotName": "Cell_Field_CellField_2D_XY_0"
+        }
+    }
+}

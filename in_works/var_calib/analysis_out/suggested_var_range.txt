@@ -1,0 +1,11 @@
+COI: MMP at old-code degradation events, percentiles 5/25/50/75/95 = 0.106, 0.4461, 0.9257, 1.624, 2.469
+LAMININ: MMP at old-code degradation events, percentiles 5/25/50/75/95 = 1.122, 1.65, 2.453, 3.29, 4.162
+max MMP at intact COI COM over run  [new var=0.25 arr=A seed=12345] = 1.122
+max MMP at intact COI COM over run  [new var=0.5 arr=A seed=12345] = 1.412
+max MMP at intact COI COM over run  [new var=1 arr=A seed=12345] = 2.88
+max MMP at intact COI COM over run  [new var=1.5 arr=A seed=12345] = 3.309
+max MMP at intact COI COM over run  [new var=2 arr=A seed=12345] = 3.597
+max MMP at intact COI COM over run  [new var=2.5 arr=A seed=12345] = 3.353
+max MMP at intact COI COM over run  [new var=3 arr=A seed=12345] = 4.555
+max MMP at intact COI COM over run  [new var=3.5 arr=A seed=12345] = 4.37
+max MMP at intact COI COM over run  [old var=1.5 arr=A seed=12345] = 3.574
